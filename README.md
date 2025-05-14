@@ -1,7 +1,7 @@
 ## 📌 注意事项
 
-- 基于`LLaMA-Factory` 执行微调，微调数据集已经集成 `Deepseekcoder-fim-lora-llamafy/data`目录下。
-- 处理和输出数据保存在 `data/` 和 `output/` 目录下。**文件中代码部分的文件路径使用绝对路径（如模型位置等），因此如需运行需要进一步修改文件路径。**
+- 基于`LLaMA-Factory` 执行微调，微调数据集需集成到 `LLaMA-Factory/data`目录下。
+- 处理和输出数据保存在 `data/` 和 `output/` 目录下。**文件中代码的部分文件路径使用绝对路径（如模型位置等），如需运行需要进一步修改文件路径。**
 - 请根据实际模型路径和配置修改 `train_fim.sh` 和脚本中的超参数。
 
 ## 📁 项目结构
@@ -9,10 +9,10 @@
 ```bash
 .
 ├── data				    # 存放处理后的数据集
-│   ├── cleaned_data	
-│   ├── eval_dataset.json	# 用于评估的数据集
-│   ├── mixed_finetune_dataset.json # 微调数据集
-│   └── raw_data
+│   ├── cleaned_data	#（运行脚本生成）
+│   ├── eval_dataset.json	# 用于评估的数据集（运行脚本生成）
+│   ├── mixed_finetune_dataset.json # 微调数据集（运行脚本生成）
+│   └── raw_data      #（运行脚本生成）
 ├── output					# 模型训练输出及中间结果
 ├── requirements.txt
 ├── scripts					# 核心脚本目录
