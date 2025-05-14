@@ -1,0 +1,8 @@
+datasets==3.5.0
+javalang==0.13.0
+numpy==2.2.5
+peft==0.15.1
+scikit_learn==1.6.1
+torch==2.7.0
+tqdm==4.67.1
+transformers==4.51.3
